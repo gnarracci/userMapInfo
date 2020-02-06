@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-md-12 mt-3 mb-2 text-right">
+    <span><i class="fa fa-user"> Logged as:</i> {{ userlogged.username }} </span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 mt-2 mb-1">
+    <div class="jumbotron">
+      <h3><i class="fa fa-dashboard mx-auto"> userMapInfo Dashboard </i></h3>
+      <p class="lead"><i class="fa fa-info-circle"></i>  User System Registered List.</p>
+    </div>
+  </div>
+</div>
+<hr class="my-4">
+<div class="row">
+  <div class="col-md-4 mt-3 mb-3" *ngFor="let user of users">
+    <div class="card text-center">
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-md-start usrn">
+        {{ user.username }}
+        <button class="btn-danger" (click)="deleteUser(user.id)"><i class="fa fa-trash"></i></button>
+      </div>
+      <img [src]="user.image" class="card-img-top mt-2">
+      <div class="card-body">
+        <p> <span>Username: </span> {{ user.username }} </p>
+        <p> <span>User Email: </span> {{ user.email }} </p>
+        <p> <span>Create Date: </span> {{ user.created_at | date: 'yyyy-MM-dd' }} </p>
+        <p> <span>User Update: </span> {{ user.updated_at | date: 'yyyy-MM-dd' }} </p>
+        <a [routerLink]="['/user/edit', user.id]" class="btn btn-primary btn-block"><i class="fa fa-pencil"></i> Edit User</a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-4">
+
