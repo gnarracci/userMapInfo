@@ -1,0 +1,24 @@
+{
+  "name": "usermapinfo",
+  "version": "1.0.0",
+  "description": "GeoPosition User Maps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnarracci/userMapInfo.git"
+  },
+  "keywords": [
+    "Angular",
+    "NodeJS",
+    "Typescript"
+  ],
+  "author": "Gianni Narracci",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnarracci/userMapInfo/issues"
+  },
+  "homepage": "https://github.com/gnarracci/userMapInfo#readme"
+}
