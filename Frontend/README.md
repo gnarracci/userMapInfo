@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Usurios registrados en la Base de Datos
+
+Usuarios - clave
+
+testuser - 1234
+gnarracci - 1234
+masn -1234
+
+Base de Datos MySQL 5.7 
+
+userMapInfo
+
+user: root pass: 1234
+
+En la carpeta bck_userMapInfo se encuentra el SQL
