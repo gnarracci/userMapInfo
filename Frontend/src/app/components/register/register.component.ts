@@ -26,18 +26,6 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-  /*saveNewUser() {
-    console.log(this.user);
-    delete this.user.created_at;
-    this.authService.registerUser(this.user).subscribe(
-      res => {
-        console.log(res);
-        this.router.navigate(['/profile']);
-      },
-      err => console.error(err)
-    );
-  }*/
-
   saveNewUser() {
     Swal.fire({
       title: 'Are you want Save the New User?',

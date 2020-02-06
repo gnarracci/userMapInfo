@@ -11,6 +11,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserformComponent } from './components/userform/userform.component';
 import { MapComponent } from './components/map/map.component';
+import { FailureComponent } from './components/failure/failure.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'user/add', component: UserformComponent, canActivate: [AuthGuard]},
   {path: 'user/edit/:id', component: UserformComponent, canActivate: [AuthGuard]},
   {path: 'map', component: MapComponent, canActivate: [AuthGuard]},
+  {path: 'failure', component: FailureComponent, canActivate: [AuthGuard]},
   {path: '**', component: NotfoundComponent}
 ];
 
